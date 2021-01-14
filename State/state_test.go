@@ -7,9 +7,10 @@ import (
 
 func TestDayContext(t *testing.T) {
 	day := NewDayContext()
-	for {
+	i := 0
+	for ; i < 10; i++ {
 		day.Today()
 		day.Next()
-	 	time.Sleep(time.Second)
+		time.Sleep(time.Second)
 	}
 }
